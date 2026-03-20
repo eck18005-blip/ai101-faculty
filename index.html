@@ -594,82 +594,98 @@
     <!-- MISSION ALIGNMENT + LEARNING OUTCOMES (side by side on large screens) -->
     <div class="flex flex-col lg:flex-row gap-12 items-start">
 
-        <!-- LEFT: Mission Alignment Accordion -->
-        <section id="mission-alignment" class="bg-white rounded-lg chapel-shadow relative pt-8 w-full lg:w-1/2 lg:sticky lg:top-28 self-start">
-            <div class="mx-auto w-max mt-[-52px] mb-8">
-                <div class="bg-white px-6 py-2 text-xl border border-gray-200 rounded shadow-sm chapel-heading" style="color:var(--chapel-navy)">Mission Alignment</div>
+      <!-- The Benefits Section Container -->
+    <div class="w-full max-w-2xl mt-10 relative">
+        
+        <!-- White Background Card -->
+        <div class="bg-white rounded-lg pt-12 pb-10 px-6 sm:px-10 shadow-[0_2px_10px_-3px_rgba(0,0,0,0.05)] border border-gray-100">
+            
+            <!-- Overlapping Title Box -->
+            <div class="absolute -top-5 left-1/2 transform -translate-x-1/2">
+                <div class="bg-white px-8 py-2 border border-gray-200 rounded-sm">
+                    <h2 class="text-xl md:text-2xl text-byu-blue font-serif tracking-wide">The Benefits</h2>
+                </div>
             </div>
 
-            <div class="flex flex-col gap-4 p-6 md:px-10 pb-10" id="mission-accordion">
+            <!-- Optional Intro Text (Hidden by default to match strict prompt, but can be un-commented) -->
+            <!-- <p class="text-center italic text-gray-500 mb-6">The benefits in this section include:</p> -->
 
-                <div class="acc-item p-5 flex flex-row items-start cursor-pointer" data-id="1">
-                    <div class="relative w-10 h-10 flex-shrink-0 mr-4">
-                        <svg class="absolute top-0 left-0 w-10 h-10 icon-polygon" style="color:var(--chapel-wood)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 4 19 12 5 20"/></svg>
-                        <svg class="absolute top-0 left-0 w-10 h-10 icon-polyline" style="color:var(--chapel-navy);opacity:0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            <!-- Benefits List -->
+            <div class="flex flex-col gap-4 mt-2">
+                
+                <!-- Benefit 1 -->
+                <div class="flex items-center gap-5 p-4 border border-gray-200 rounded-sm bg-white hover:bg-gray-50 transition-colors duration-200">
+                    <div class="flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-7 h-7 text-byu-bronze">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+                        </svg>
                     </div>
-                    <div class="flex-1 min-w-0">
-                        <h3 class="text-lg font-bold text-slate-800 font-serif py-1">Providing a high-quality education</h3>
-                        <div class="acc-content">
-                            <div class="space-y-3 pb-2 mt-3">
-                                <div class="theme-bg rounded">
-                                    <h4 class="text-xs uppercase tracking-widest mb-1 theme-text">Rigorous &amp; Spiritual</h4>
-                                    <p class="text-sm text-slate-600">Reduce administrative overhead to focus on teaching that matters.</p>
-                                </div>
-                                <div class="theme-bg rounded">
-                                    <h4 class="text-xs uppercase tracking-widest mb-1 theme-text">Wholesome Environment</h4>
-                                    <p class="text-sm text-slate-600">Presence matters. When we reduce busywork, we increase connection.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <span class="font-bold text-[15px] leading-snug text-gray-800">Earn ½ hour of Professional Development Leave (PDL)</span>
                 </div>
 
-                <div class="acc-item p-5 flex flex-row items-start cursor-pointer" data-id="2">
-                    <div class="relative w-10 h-10 flex-shrink-0 mr-4">
-                        <svg class="absolute top-0 left-0 w-10 h-10 icon-polygon" style="color:var(--chapel-wood)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 4 19 12 5 20"/></svg>
-                        <svg class="absolute top-0 left-0 w-10 h-10 icon-polyline" style="color:var(--chapel-navy);opacity:0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                <!-- Benefit 2 -->
+                <div class="flex items-center gap-5 p-4 border border-gray-200 rounded-sm bg-white hover:bg-gray-50 transition-colors duration-200">
+                    <div class="flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-7 h-7 text-byu-bronze">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+                        </svg>
                     </div>
-                    <div class="flex-1 min-w-0">
-                        <h3 class="text-lg font-bold text-slate-800 font-serif py-1">Building Character and Competence</h3>
-                        <div class="acc-content">
-                            <div class="space-y-3 pb-2 mt-3">
-                                <div class="theme-bg rounded">
-                                    <h4 class="text-xs uppercase tracking-widest mb-1 theme-text">Leadership Preparation</h4>
-                                    <p class="text-sm text-slate-600">Workforce preparation now includes responsible AI use.</p>
-                                </div>
-                                <div class="theme-bg rounded">
-                                    <h4 class="text-xs uppercase tracking-widest mb-1 theme-text">Lifelong Learning</h4>
-                                    <p class="text-sm text-slate-600">AI fluency is not a single skill — it's an adaptable mindset.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <span class="font-bold text-[15px] leading-snug text-gray-800">Develop a personal ethical framework for using AI in teaching and professional work</span>
                 </div>
 
-                <div class="acc-item p-5 flex flex-row items-start cursor-pointer" data-id="3">
-                    <div class="relative w-10 h-10 flex-shrink-0 mr-4">
-                        <svg class="absolute top-0 left-0 w-10 h-10 icon-polygon" style="color:var(--chapel-wood)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 4 19 12 5 20"/></svg>
-                        <svg class="absolute top-0 left-0 w-10 h-10 icon-polyline" style="color:var(--chapel-navy);opacity:0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                <!-- Benefit 3 -->
+                <div class="flex items-center gap-5 p-4 border border-gray-200 rounded-sm bg-white hover:bg-gray-50 transition-colors duration-200">
+                    <div class="flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-7 h-7 text-byu-bronze">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+                        </svg>
                     </div>
-                    <div class="flex-1 min-w-0">
-                        <h3 class="text-lg font-bold text-slate-800 font-serif py-1">Agency and Discernment</h3>
-                        <div class="acc-content">
-                            <div class="space-y-3 pb-2 mt-3">
-                                <div class="theme-bg rounded">
-                                    <h4 class="text-xs uppercase tracking-widest mb-1 theme-text">Gospel Testimonies</h4>
-                                    <p class="text-sm text-slate-600">Discernment and integrity apply to digital decisions.</p>
-                                </div>
-                                <div class="theme-bg rounded">
-                                    <h4 class="text-xs uppercase tracking-widest mb-1 theme-text">Scaling Support</h4>
-                                    <p class="text-sm text-slate-600">AI helps us scale individualized support without compromising values.</p>
-                                </div>
-                            </div>
-                        </div>
+                    <span class="font-bold text-[15px] leading-snug text-gray-800">Make sound, gospel-centered decisions about AI, integrity, and student learning</span>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="flex items-center gap-5 p-4 border border-gray-200 rounded-sm bg-white hover:bg-gray-50 transition-colors duration-200">
+                    <div class="flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-7 h-7 text-byu-bronze">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+                        </svg>
                     </div>
+                    <span class="font-bold text-[15px] leading-snug text-gray-800">Leave with ready-to-use AI syllabus statements for your courses</span>
+                </div>
+
+                <!-- Benefit 5 -->
+                <div class="flex items-center gap-5 p-4 border border-gray-200 rounded-sm bg-white hover:bg-gray-50 transition-colors duration-200">
+                    <div class="flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-7 h-7 text-byu-bronze">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+                        </svg>
+                    </div>
+                    <span class="font-bold text-[15px] leading-snug text-gray-800">Learn to leverage AI tools to support your academic, professional, and personal productivity</span>
+                </div>
+
+                <!-- Benefit 6 -->
+                <div class="flex items-center gap-5 p-4 border border-gray-200 rounded-sm bg-white hover:bg-gray-50 transition-colors duration-200">
+                    <div class="flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-7 h-7 text-byu-bronze">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+                        </svg>
+                    </div>
+                    <span class="font-bold text-[15px] leading-snug text-gray-800">Analyze how AI is impacting your discipline and industry</span>
+                </div>
+
+                <!-- Benefit 7 -->
+                <div class="flex items-center gap-5 p-4 border border-gray-200 rounded-sm bg-white hover:bg-gray-50 transition-colors duration-200">
+                    <div class="flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-7 h-7 text-byu-bronze">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+                        </svg>
+                    </div>
+                    <span class="font-bold text-[15px] leading-snug text-gray-800">Build confidence to integrate AI intentionally into learning experiences</span>
                 </div>
 
             </div>
-        </section>
+        </div>
+    </div>
 
         <!-- RIGHT: Learning Outcomes -->
         <section id="learning-outcomes" class="bg-white rounded-lg chapel-shadow relative pt-8 w-full lg:w-1/2">
