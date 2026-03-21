@@ -775,33 +775,139 @@
     </div>
 
      <!-- The Commitment -->
-        <section id="weekly-commitment" class="section-card relative px-6 md:px-12 pb-12 pt-14 mt-10">
+         <section id="weekly-commitment" class="section-card relative px-4 md:px-10 pb-10 pt-14 mt-10 chapel-shadow">
             
             <!-- Overlapping Title -->
-            <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 overlapping-title text-center whitespace-nowrap">
+            <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 overlapping-title text-center whitespace-nowrap z-20">
                 <h2 class="font-serif-custom text-xl font-bold tracking-wide">The Weekly Commitment</h2>
             </div>
 
-            <!-- Content List -->
-            <div class="flex flex-col gap-5 mt-4">
+            <!-- ========================================== -->
+            <!-- DESKTOP CALENDAR VIEW -->
+            <!-- ========================================== -->
+            <div class="hidden lg:flex flex-col border border-slate-200 rounded-md overflow-hidden bg-white mt-4 shadow-sm relative">
                 
-                <!-- Item 1: Independent Course Work -->
-                <div class="list-item-box p-5 flex flex-row items-start bg-white">
-                    <div class="mt-1 mr-5 flex-shrink-0">
-                        <svg class="w-8 h-8" style="color: var(--chapel-wood);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Header Row -->
+                <div class="grid grid-cols-6 text-white text-center text-sm font-bold tracking-wider relative z-20 shadow-sm">
+                    <div class="py-3 border-r border-slate-500/50" style="background-color: var(--chapel-navy);">Mon</div>
+                    <div class="py-3 border-r border-slate-500/50" style="background-color: var(--chapel-navy);">Tue</div>
+                    <div class="py-3 border-r border-slate-500/50" style="background-color: var(--chapel-wood);">Wed</div>
+                    <div class="py-3 border-r border-slate-500/50" style="background-color: var(--chapel-wood);">Thu</div>
+                    <div class="py-3 border-r border-slate-500/50" style="background-color: var(--chapel-navy);">Fri</div>
+                    <div class="py-3 bg-slate-500 text-white">Sat & Sun</div>
+                </div>
+
+                <!-- Body Grid -->
+                <div class="relative grid grid-cols-6 grid-rows-[auto_auto_1fr]">
+                    
+                    <!-- Column Background Lines (Now full Navy Blue) -->
+                    <div class="col-start-1 row-start-1 row-span-3 border-r-[3px] border-dotted border-[color:var(--chapel-navy)] pointer-events-none z-0"></div>
+                    <div class="col-start-2 row-start-1 row-span-3 border-r-[3px] border-dotted border-[color:var(--chapel-navy)] pointer-events-none z-0"></div>
+                    <div class="col-start-3 row-start-1 row-span-3 border-r-[3px] border-dotted border-[color:var(--chapel-navy)] pointer-events-none z-0"></div>
+                    <div class="col-start-4 row-start-1 row-span-3 border-r-[3px] border-dotted border-[color:var(--chapel-navy)] pointer-events-none z-0"></div>
+                    <div class="col-start-5 row-start-1 row-span-3 border-r-2 border-solid border-[color:var(--chapel-navy)] pointer-events-none z-0"></div>
+                    
+                    <div class="col-start-6 row-start-1 row-span-3 bg-slate-50 flex items-center justify-center p-4 text-center overflow-hidden min-h-[300px] z-0">
+                        <div class="relative transform -rotate-90 -skew-x-12 -skew-y-3 mt-4">
+                            <span class="font-marker text-red-600 text-5xl md:text-6xl tracking-widest whitespace-nowrap opacity-90">WEEKEND</span>
+                            <!-- Custom SVG Curved Underlines -->
+                            <svg class="absolute w-full h-6 text-red-600 opacity-80 pointer-events-none" viewBox="0 0 200 20" preserveAspectRatio="none" style="bottom: -12px; left: 0;">
+                                <path d="M5,15 Q100,0 195,15" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                            </svg>
+                            <svg class="absolute w-full h-6 text-red-600 opacity-60 pointer-events-none" viewBox="0 0 200 20" preserveAspectRatio="none" style="bottom: -22px; left: 0;">
+                                <path d="M10,10 Q100,20 190,5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Solid Box Top Segment: Schedule Options (Attached to top header) -->
+                    <div class="col-start-3 col-span-2 row-start-1 relative z-10 bg-white border-l border-r border-b border-slate-200 rounded-b-md shadow-lg flex flex-col mx-2 mb-4 overflow-hidden">
+                        <div class="p-5">
+                            <h3 class="text-base font-bold font-serif-custom mb-1 leading-tight" style="color: var(--chapel-navy);">
+                                Virtual/Live Classtime - 1 Hour
+                            </h3>
+                            <p class="text-slate-500 text-xs font-sans font-semibold uppercase tracking-wider mb-4">(Presentations • Discussions)</p>
+                            <h4 class="font-bold text-xs uppercase tracking-wider mb-3" style="color: var(--chapel-navy);">
+                                2 times to choose from:
+                            </h4>
+                            <ul class="space-y-3 pl-1">
+                                <li class="flex items-center text-sm font-semibold text-slate-700">
+                                    <span class="w-2 h-2 rounded-full mr-3 flex-shrink-0" style="background-color: var(--chapel-gold);"></span>
+                                    Wednesday <span class="mx-2 opacity-30">|</span> 4:00 – 5:00 PM
+                                </li>
+                                <li class="flex items-center text-sm font-semibold text-slate-700">
+                                    <span class="w-2 h-2 rounded-full mr-3 flex-shrink-0" style="background-color: var(--chapel-gold);"></span>
+                                    Thursdays <span class="mx-2 opacity-30">|</span> 4:00 – 5:00 PM
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Independent Work (Spans Mon-Fri Background, in the gap) -->
+                    <div class="col-start-1 col-span-5 row-start-2 px-6 py-6 relative z-10 flex flex-col items-start gap-3">
+                        <!-- bg-white masks the lines behind it, individually fit to each text block for a contoured shape -->
+                        <!-- Added a white 'ring' to expand the background and swallow any partially cut dots -->
+                        <div class="bg-white px-3 py-1 w-fit rounded-sm ring-[3px] ring-white">
+                            <h3 class="text-lg font-bold font-serif-custom m-0" style="color: var(--chapel-navy);">
+                                Independent course work - 2-3 hours
+                                <span class="text-slate-500 text-xs font-sans font-semibold uppercase tracking-wider ml-2">(Flexible • on Canvas)</span>
+                            </h3>
+                        </div>
+                        
+                        <div class="bg-white px-3 py-1 w-fit mt-1 rounded-sm ring-[3px] ring-white">
+                            <p class="m-0 font-semibold text-slate-700 text-sm">Each week's preparatory materials will include:</p>
+                        </div>
+                        
+                        <div class="bg-white px-3 py-1 pr-6 w-fit rounded-sm ring-[3px] ring-white">
+                            <ul class="list-disc ml-5 m-0 space-y-1 marker:[color:var(--chapel-gold)] text-slate-700 text-sm">
+                                <li>readings</li>
+                                <li>videos</li>
+                                <li>other foundational tasks</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Solid Box Bottom Segment: Live Sessions Info (Attached to the bottom) -->
+                    <div class="col-start-3 col-span-2 row-start-3 self-end relative z-10 bg-white border border-slate-200 rounded-t-md shadow-[0_-4px_10px_rgba(0,0,0,0.05)] flex flex-col mx-2 mt-4 overflow-hidden">
+                        <div class="bg-slate-50 border-t-4 p-5" style="border-top-color: var(--chapel-wood);">
+                            <div class="text-slate-700 text-sm">
+                                <p class="mb-3 font-bold text-base font-serif-custom" style="color: var(--chapel-navy);">Weekly class meetings provide:</p>
+                                <ul class="list-disc pl-5 space-y-1 marker:[color:var(--chapel-gold)]">
+                                    <li>collaborative discussion</li>
+                                    <li>hands-on tool exploration</li>
+                                    <li>community building among faculty cohorts</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Spacer -->
+                    <div class="col-start-1 col-span-5 row-start-3 min-h-[120px] pointer-events-none z-0"></div>
+
+                </div>
+            </div>
+
+            <!-- ========================================== -->
+            <!-- MOBILE FALLBACK VIEW -->
+            <!-- ========================================== -->
+            <div class="flex flex-col gap-5 mt-6 lg:hidden">
+                
+                <!-- Mobile Item 1: Independent Work -->
+                <div class="px-2 py-4 flex flex-row items-start">
+                    <div class="mt-1 mr-4 flex-shrink-0">
+                        <svg class="w-7 h-7" style="color: var(--chapel-wood);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                             <polygon points="5 3 19 12 5 21"></polygon>
                         </svg>
                     </div>
                     <div class="flex-1">
-                        <h3 class="text-lg font-bold font-serif-custom" style="color: var(--chapel-navy);">
-                            2-3 hours of independent course work
-                        </h3>
-                        <p class="text-slate-500 mt-1 text-sm font-semibold uppercase tracking-wider mb-4">(on Canvas)</p>
-                        
-                        <!-- Added Content: Online Preparation -->
-                        <div class="text-slate-700 text-md">
-                            <p class="mb-2">Each week's preparatory materials will include:</p>
-                            <ul class="list-disc pl-6 space-y-1 marker:[color:var(--chapel-gold)]">
+                        <div class="text-slate-700 text-sm">
+                            <h3 class="text-lg font-bold font-serif-custom mb-1" style="color: var(--chapel-navy);">
+                                Independent course work - 2-3 hours
+                            </h3>
+                            <p class="text-slate-500 text-xs font-semibold uppercase tracking-wider mb-4">(Flexible • on Canvas)</p>
+                            
+                            <p class="mb-2 font-semibold">Each week's preparatory materials will include:</p>
+                            <ul class="list-disc pl-5 space-y-1 marker:[color:var(--chapel-gold)]">
                                 <li>readings</li>
                                 <li>videos</li>
                                 <li>other foundational tasks</li>
@@ -810,49 +916,50 @@
                     </div>
                 </div>
 
-                <!-- Item 2: Presentations & Discussions -->
-                <div class="list-item-box p-5 flex flex-row items-start bg-white">
-                    <div class="mt-1 mr-5 flex-shrink-0">
-                        <svg class="w-8 h-8" style="color: var(--chapel-wood);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polygon points="5 3 19 12 5 21"></polygon>
+                <!-- Mobile Item 2: Schedule Options -->
+                <div class="border border-slate-200 rounded-md p-5 flex flex-row items-start bg-white shadow-sm">
+                    <div class="mt-1 mr-4 flex-shrink-0">
+                        <svg class="w-7 h-7" style="color: var(--chapel-wood);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
                         </svg>
                     </div>
                     <div class="flex-1 w-full">
-                        <h3 class="text-lg font-bold font-serif-custom mb-4" style="color: var(--chapel-navy);">
-                            1 hour virtual/live presentations and discussions
+                        <div class="text-slate-700 text-sm">
+                            <h3 class="text-lg font-bold font-serif-custom mb-1" style="color: var(--chapel-navy);">
+                                Virtual/Live Classtime - 1 Hour
+                            </h3>
+                            <p class="text-slate-500 text-xs font-sans font-semibold uppercase tracking-wider mb-4">(Presentations • Discussions)</p>
+                            <h4 class="font-bold text-xs uppercase tracking-wider mb-3" style="color: var(--chapel-navy);">
+                                2 times to choose from:
+                            </h4>
+                            <ul class="space-y-3 pl-1">
+                                <li class="flex items-center text-sm font-semibold text-slate-700">
+                                    <span class="w-2 h-2 rounded-full mr-3 flex-shrink-0" style="background-color: var(--chapel-gold);"></span>
+                                    Wednesday <span class="mx-2 opacity-30">|</span> 4:00 – 5:00 PM
+                                </li>
+                                <li class="flex items-center text-sm font-semibold text-slate-700">
+                                    <span class="w-2 h-2 rounded-full mr-3 flex-shrink-0" style="background-color: var(--chapel-gold);"></span>
+                                    Thursdays <span class="mx-2 opacity-30">|</span> 4:00 – 5:00 PM
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Item 3: Live Sessions Info -->
+                <div class="border border-slate-200 rounded-md overflow-hidden shadow-sm bg-white">
+                    <div class="px-5 py-4 border-t-4" style="background-color: var(--chapel-navy); border-top-color: var(--chapel-wood);">
+                        <h3 class="text-lg font-bold font-serif-custom text-white">
+                            Weekly class meetings provide:
                         </h3>
-                        
-                        <!-- Added Content: Virtual Sessions -->
-                        <div class="text-slate-700 text-md">
-                            <p class="mb-2">Weekly class meetings provide:</p>
-                            <ul class="list-disc pl-6 space-y-1 marker:[color:var(--chapel-gold)]">
+                    </div>
+                    <div class="p-5" style="background-color: var(--chapel-cream);">
+                        <div class="text-slate-700 text-sm">
+                            <ul class="list-disc pl-5 space-y-2 marker:[color:var(--chapel-gold)]">
                                 <li>collaborative discussion</li>
                                 <li>hands-on tool exploration</li>
                                 <li>community building among faculty cohorts</li>
                             </ul>
-                        </div>
-                        
-                        <!-- Nested Schedule Box -->
-                        <div class="mt-6 rounded border overflow-hidden shadow-sm" style="border-color: var(--chapel-border);">
-                            <!-- Navy Header -->
-                            <div class="px-5 py-3" style="background-color: var(--chapel-navy);">
-                                <h4 class="font-bold text-sm uppercase tracking-wider text-white">
-                                    2 times to choose from:
-                                </h4>
-                            </div>
-                            <!-- Cream Body -->
-                            <div class="p-5" style="background-color: var(--chapel-cream);">
-                                <ul class="space-y-3 pl-2">
-                                    <li class="flex items-center text-md" style="color: var(--chapel-navy);">
-                                        <span class="w-2 h-2 rounded-full mr-3 flex-shrink-0" style="background-color: var(--chapel-gold);"></span>
-                                        <strong>Wednesday</strong> <span class="mx-2 opacity-50">|</span> 4:00 PM – 5:00 PM
-                                    </li>
-                                    <li class="flex items-center text-md" style="color: var(--chapel-navy);">
-                                        <span class="w-2 h-2 rounded-full mr-3 flex-shrink-0" style="background-color: var(--chapel-gold);"></span>
-                                        <strong>Thursdays</strong> <span class="mx-2 opacity-50">|</span> 4:00 PM – 5:00 PM
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </div>
