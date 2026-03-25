@@ -80,12 +80,12 @@
         }
         .layer-block.open .block-arrow { transform: rotate(180deg); }
 
-        .row-1 { padding-right: 58%; }
-        .row-2 { padding-right: 48%; }
-        .row-3 { padding-right: 38%; }
-        .row-4 { padding-right: 28%; }
-        .row-5 { padding-right: 18%; }
-        .row-6 { padding-right: 0%;  }
+        .row-1 .layer-block { width: 42%; } /* 100% - 58% */
+        .row-2 .layer-block { width: 52%; } /* 100% - 48% */
+        .row-3 .layer-block { width: 62%; } /* 100% - 38% */
+        .row-4 .layer-block { width: 72%; } /* 100% - 28% */
+        .row-5 .layer-block { width: 82%; } /* 100% - 18% */
+
 
         .row-1 .layer-block { background-color: #7BA4C7; }
         .row-2 .layer-block { background-color: #5C8AB5; }
