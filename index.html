@@ -44,7 +44,7 @@
 
         <!-- RIGHT COLUMN: Registration Panel -->
         <div class="registration-panel" id="registration-panel">
-            <div class="reg-title">Express Interest</div>
+            <div class="reg-title">Register here</div>
 
             <div id="reg-form-inner">
                 <!-- Row 1: First + Last -->
@@ -191,89 +191,138 @@
     </div>
 
         <!-- RIGHT: Learning Outcomes -->
-        <section id="learning-outcomes" class="bg-white rounded-lg chapel-shadow relative pt-8 w-full lg:w-1/2">
-            <div class="sticky top-6 z-20 mx-auto w-max mt-[-52px] mb-8">
-                <div class="bg-white px-6 py-2 text-xl border border-gray-200 rounded shadow-sm chapel-heading" style="color:var(--chapel-navy)">Learning Outcomes</div>
+        <section id="learning-outcomes" class="bg-white rounded-xl chapel-shadow relative pt-12 p-8 w-full max-w-xl border border-gray-100 h-fit">
+        
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
+            <div class="bg-white px-6 py-2 text-lg font-bold border border-gray-200 rounded shadow-sm tracking-tight text-center whitespace-nowrap" style="color:var(--chapel-navy); font-family: sans-serif;">
+                Learning Outcomes
             </div>
-            <div class="p-6 md:px-10 pb-10">
-                <p class="text-sm text-gray-500 mb-4 italic">Click any outcome to see its application.</p>
-                <div id="pyramid-wrapper" class="flex flex-col gap-2">
+        </div>
+        
+        <div class="flex flex-col gap-3 mt-4">
+            <p class="text-xs text-gray-400 mb-2 italic font-sans text-center">Click any outcome to see its application.</p>
+            
+            <div id="pyramid-wrapper" class="flex flex-col gap-2">
 
-                    <div class="layer-row row-1">
-                        <div class="layer-content">
-                            <div class="layer-block" onclick="toggleOutcome(this)">
-                                <span>Create a personal ethical framework</span>
-                                <span class="block-arrow">▼</span>
-                            </div>
-                            <div class="example-dropdown">
-                                <div class="example-dropdown-inner"><strong>Application:</strong> Deciding when AI assistance is academic dishonesty.</div>
+                <div class="layer-row row-1 w-full">
+                    <div class="layer-content">
+                        <div class="layer-block" onclick="toggleOutcome(this)">
+                            <span>Create a personal ethical framework</span>
+                            <span class="block-arrow">▼</span>
+                        </div>
+                        <div class="example-dropdown">
+                            <div class="example-dropdown-inner">
+                                <ul class="list-disc ml-5 space-y-1">
+                                    <li>What is my purpose in using AI?</li>
+                                    <li>Where do I set boundaries with AI?</li>
+                                    <li>How will I maintain transparency in my AI use?</li>
+                                    <li>How do I stay accountable while using AI?</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-
-                    <div class="layer-row row-2">
-                        <div class="layer-content">
-                            <div class="layer-block" onclick="toggleOutcome(this)">
-                                <span>Articulate a clear position on AI use</span>
-                                <span class="block-arrow">▼</span>
-                            </div>
-                            <div class="example-dropdown">
-                                <div class="example-dropdown-inner"><strong>Application:</strong> Syllabus policies, classroom boundaries.</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="layer-row row-3">
-                        <div class="layer-content">
-                            <div class="layer-block" onclick="toggleOutcome(this)">
-                                <span>Make sound, gospel-centric decisions</span>
-                                <span class="block-arrow">▼</span>
-                            </div>
-                            <div class="example-dropdown">
-                                <div class="example-dropdown-inner"><strong>Application:</strong> Seeking the Spirit for discernment.</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="layer-row row-4">
-                        <div class="layer-content">
-                            <div class="layer-block" onclick="toggleOutcome(this)">
-                                <span>Leverage AI tools professionally</span>
-                                <span class="block-arrow">▼</span>
-                            </div>
-                            <div class="example-dropdown">
-                                <div class="example-dropdown-inner"><strong>Application:</strong> Drafting emails, summarizing articles.</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="layer-row row-5">
-                        <div class="layer-content">
-                            <div class="layer-block" onclick="toggleOutcome(this)">
-                                <span>Analyze the impact of AI on their discipline</span>
-                                <span class="block-arrow">▼</span>
-                            </div>
-                            <div class="example-dropdown">
-                                <div class="example-dropdown-inner"><strong>Application:</strong> Redesigning outcomes for AI-workforce alignment.</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="layer-row row-6">
-                        <div class="layer-content">
-                            <div class="layer-block" onclick="toggleOutcome(this)">
-                                <span>Integrate AI intentionally into a learning experience</span>
-                                <span class="block-arrow">▼</span>
-                            </div>
-                            <div class="example-dropdown">
-                                <div class="example-dropdown-inner"><strong>Application:</strong> AI as a debate opponent, critique prompt outputs.</div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
+
+                <div class="layer-row row-2 w-full">
+                    <div class="layer-content">
+                        <div class="layer-block" onclick="toggleOutcome(this)">
+                            <span>Make sound, gospel-centric decisions</span>
+                            <span class="block-arrow">▼</span>
+                        </div>
+                        <div class="example-dropdown">
+                            <div class="example-dropdown-inner">
+                                <ul class="list-disc ml-5 space-y-1">
+                                    <li>When does AI invite light into learning, and when might it distract from it?</li>
+                                    <li>How can gospel principles guide the technology decisions I make?</li>
+                                    <li>In what situations might AI unintentionally weaken student development?</li>
+                                    <li>How can I create classroom norms that balance wisdom with compassion?</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="layer-row row-3 w-full">
+                    <div class="layer-content">
+                        <div class="layer-block" onclick="toggleOutcome(this)">
+                            <span>Leverage AI tools professionally</span>
+                            <span class="block-arrow">▼</span>
+                        </div>
+                        <div class="example-dropdown">
+                            <div class="example-dropdown-inner">
+                                <ul class="list-disc ml-5 space-y-1">
+                                    <li>How can AI help me streamline tasks like emails, rubrics, or lesson outlines?</li>
+                                    <li>What prompt patterns could help me work more efficiently and effectively?</li>
+                                    <li>Which professional responsibilities should I not automate with AI?</li>
+                                    <li>Which AI tools could improve my feedback, differentiation, or planning?</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="layer-row row-4 w-full">
+                    <div class="layer-content">
+                        <div class="layer-block" onclick="toggleOutcome(this)">
+                            <span>Analyze the impact of AI on their discipline</span>
+                            <span class="block-arrow">▼</span>
+                        </div>
+                        <div class="example-dropdown">
+                            <div class="example-dropdown-inner">
+                                <ul class="list-disc ml-5 space-y-1">
+                                    <li>How is AI currently reshaping my specific subject area?</li>
+                                    <li>What new skills do students need to thrive in an AI-powered world?</li>
+                                    <li>What risks and opportunities does AI create within my field?</li>
+                                    <li>What misconceptions do my students bring into class because of AI?</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="layer-row row-5 w-full">
+                    <div class="layer-content">
+                        <div class="layer-block" onclick="toggleOutcome(this)">
+                            <span>Integrate AI intentionally into a learning experience</span>
+                            <span class="block-arrow">▼</span>
+                        </div>
+                        <div class="example-dropdown">
+                            <div class="example-dropdown-inner">
+                                <ul class="list-disc ml-5 space-y-1">
+                                    <li>How can I design activities where AI enhances thinking rather than replaces it?</li>
+                                    <li>What can students learn by comparing their work to AI-generated work?</li>
+                                    <li>When does AI help with brainstorming, revision, or scaffolding—and when should students rely on their own originality?</li>
+                                    <li>What boundaries should I set for when students may or may not use AI?</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </section>
+        </div>
+    </section>
+
+    <script>
+        function toggleOutcome(element) {
+            const dropdown = element.nextElementSibling;
+            const arrow = element.querySelector('.block-arrow');
+            const isOpen = dropdown.classList.contains('open');
+
+            // Close others
+            document.querySelectorAll('.example-dropdown').forEach(d => d.classList.remove('open'));
+            document.querySelectorAll('.block-arrow').forEach(a => {
+                a.style.transform = 'rotate(0deg)';
+                a.textContent = '▼';
+            });
+
+            if (!isOpen) {
+                dropdown.classList.add('open');
+                arrow.style.transform = 'rotate(180deg)';
+                arrow.textContent = '▲';
+            }
+        }
+    </script>
 
     </div>
 
